@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+
+
+
+{% block error%}
+
+
+{% if name == None%}
+<div class="alert alert-danger d-flex align-items-center " role="alert">
+  <div style="margin-left:">
+    <b>⚠ Please enter valid name , only charecter are suported</b>
+  </div>
+</div>
+
+{% endif %}
+{% if phone == None%}
+
+<div class="alert alert-danger d-flex align-items-center " role="alert">
+  <div style="margin-left:">
+    <b>
+⚠ Please enter valid 10 digit phone number</b>
+  </div>
+</div>
+{% endif %}
+{% if email == None %}
+<div class="alert alert-danger d-flex align-items-center " role="alert">
+  <div style="margin-left:">
+    <b>⚠ Please enter email id ,valid way </b>
+  </div>
+</div>
+{% endif %}
+
+
+{% endblock %}

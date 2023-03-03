@@ -1,0 +1,65 @@
+{%include "index.html"%}
+
+             
+
+               
+               <div class="offcanvas offcanvas-end show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel"  style="background-color: rgba(220, 220, 220, .4); ">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title" id="offcanvasLabel">Update Record</h3>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    
+     
+      
+
+                  <form method="POST" action="{%  url 'update' id %}">
+          {% csrf_token %}
+      
+     <div class="input-group mb-3">
+  <span class="input-group-text">🧑‍💼</span>
+  <div class="form-floating">
+{{up.name}}    <label for="floatingInputGroup1">Name</label>
+  </div>
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">📩</span>
+  <div class="form-floating">
+{{up.email}}
+ <label for="floatingInputGroup1">Email</label>
+  </div>  
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">📞</span>
+  <div class="form-floating">
+{{up.phone}}    <label for="floatingInputGroup1">Phone</label>
+  </div>
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">🏢</span>
+  <div class="form-floating">
+{{up.college}}    <label for="floatingInputGroup1">College</label>
+  </div>
+</div>
+
+    
+     <button type="submit" class="btn btn-info">Update</button>
+      
+    </form>
+  
+
+<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/ckatldkn.json"
+    trigger="loop"
+    colors="primary:gray,secondary:blue,tertiary:dark"
+    style="width:350px;height:350px">
+</lord-icon>
+
+
+
+  </div>
+</div>
